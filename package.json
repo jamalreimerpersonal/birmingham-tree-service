@@ -1,0 +1,25 @@
+{
+  "name": "birmingham-tree-service",
+  "version": "1.0.0",
+  "description": "Professional tree service website for Birmingham, AL",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "@astrojs/tailwind": "^0.4.1",
+    "@astrojs/sitemap": "^3.0.0",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
