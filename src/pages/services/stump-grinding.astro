@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import { PHONE_NUMBER, SITE_NAME } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+import ContactForm from '../../components/ContactForm.astro';
+
+const schema = generateServiceSchema({
+  name: 'Professional Stump Grinding',
+  description: 'Expert stump grinding and removal services in Birmingham. Complete site cleanup available.',
+  provider: SITE_NAME
+});
+---
+
+<Base
+  title="Professional Stump Grinding in Birmingham, AL | Tree Service Birmingham"
+  description="Professional stump grinding in Birmingham. Remove tree stumps safely and efficiently. Free estimates available."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-green-900 to-green-700 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Stump Grinding</h1>
+        <p class="text-lg text-green-100">
+          Efficient stump removal and grinding. Reclaim your yard and eliminate tripping hazards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none mb-12">
+        <h2>Why Remove Tree Stumps?</h2>
+        <p>
+          Tree stumps create safety hazards, encourage pest infestations, and limit your yard's usability. Left alone, stumps can sprout new growth and attract insects. Professional grinding removes the entire stump below ground level, reclaiming your outdoor space.
+        </p>
+
+        <h2>Problems with Stumps</h2>
+        <ul>
+          <li>Tripping hazards for children and elderly</li>
+          <li>Mowing and landscaping obstacles</li>
+          <li>Pest and insect breeding grounds</li>
+          <li>Disease spread from rotting wood</li>
+          <li>Regrowth and new shoots</li>
+          <li>Reduced property value and aesthetics</li>
+        </ul>
+
+        <h2>Our Stump Grinding Process</h2>
+        <h3>Assessment</h3>
+        <p>
+          We evaluate the stump size, location, and soil conditions to determine the best removal approach.
+        </p>
+
+        <h3>Grinding</h3>
+        <p>
+          Using specialized grinding equipment, we reduce the stump below ground level. Chips are removed from your property.
+        </p>
+
+        <h3>Cleanup</h3>
+        <p>
+          All debris is cleared, leaving a clean area ready for replanting, landscaping, or new construction.
+        </p>
+
+        <h2>Stump Grinding vs. Chemical Removal</h2>
+        <p>
+          While chemical treatments exist, grinding is the fastest and most effective method. Chemicals can take months and may not fully remove roots. Grinding completes the job in hours.
+        </p>
+
+        <h2>What Happens to Mulch?</h2>
+        <p>
+          Your stump grinds into mulch chips. We can remove all chips from your property, or leave them for landscaping use—your choice.
+        </p>
+
+        <h2>Why Choose Professional Grinding?</h2>
+        <ul>
+          <li><strong>Modern Equipment:</strong> State-of-the-art grinding technology</li>
+          <li><strong>Complete Removal:</strong> Eliminates entire stump and major roots</li>
+          <li><strong>Safe & Efficient:</strong> Professional handling of hazardous equipment</li>
+          <li><strong>Clean Results:</strong> Your yard is left clean and ready to use</li>
+          <li><strong>Licensed & Insured:</strong> Full protection during work</li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-green-50 border-2 border-green-200 rounded-lg p-8 mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Get Your Stumps Removed</h3>
+        <p class="text-gray-700 mb-6">
+          Free estimates for stump grinding. We handle stumps of any size, anywhere on your property.
+        </p>
+        <a 
+          href={`tel:${PHONE_NUMBER}`}
+          class="button-primary inline-block"
+        >
+          Call for Free Quote
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get a Free Estimate</h3>
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</Base>
