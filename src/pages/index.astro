@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import HeroSection from '../components/HeroSection.astro';
+import FeatureBadges from '../components/FeatureBadges.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../utils/constants';
+import { generateLocalBusinessSchema } from '../utils/schema';
+
+const schema = generateLocalBusinessSchema({
+  name: SITE_NAME,
+  url: 'https://birmingham-tree-service.pages.dev',
+  phone: PHONE_NUMBER,
+  address: {
+    street: '123 Main Street',
+    city: 'Birmingham',
+    state: 'AL',
+    zip: '35203'
+  }
+});
+---
+
+<Base
+  title="Professional Tree Service in Birmingham, AL | Tree Service Birmingham"
+  description="Expert tree removal, trimming, and stump grinding in Birmingham. Licensed, insured, 24/7 emergency service. Free estimates available."
+  ogImage="https://birmingham-tree-service.pages.dev/og-image.jpg"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <HeroSection />
+
+  <!-- Feature Badges -->
+  <FeatureBadges columns={3} />
+
+  <!-- Services Section -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our Tree Services
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          From routine maintenance to emergency removal, we handle all your tree care needs with professional expertise.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <ServiceCard
+          title="Tree Removal"
+          description="Complete tree removal with stump grinding and debris cleanup."
+          icon="🌳"
+          href="/services/tree-removal"
+        />
+        <ServiceCard
+          title="Tree Trimming"
+          description="Professional trimming to enhance health and appearance."
+          icon="✂️"
+          href="/services/tree-trimming"
+        />
+        <ServiceCard
+          title="Stump Grinding"
+          description="Remove unwanted stumps safely and efficiently."
+          icon="⚙️"
+          href="/services/stump-grinding"
+        />
+        <ServiceCard
+          title="Emergency Service"
+          description="24/7 emergency tree removal for storm damage."
+          icon="🚨"
+          href="/services/emergency-removal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas Section -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Serving Birmingham & Beyond
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          We proudly serve affluent neighborhoods throughout Birmingham with professional tree care.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ServiceCard
+          title="Mountain Brook"
+          description="Trusted tree service for one of Birmingham's most prestigious neighborhoods."
+          icon="🏔️"
+          href="/locations/mountain-brook"
+        />
+        <ServiceCard
+          title="Vestavia Hills"
+          description="Professional tree care for Vestavia's beautiful estates and homes."
+          icon="🏘️"
+          href="/locations/vestavia-hills"
+        />
+        <ServiceCard
+          title="Homewood"
+          description="Serving Homewood with quality tree maintenance and removal."
+          icon="🏠"
+          href="/locations/homewood"
+        />
+        <ServiceCard
+          title="Downtown Birmingham"
+          description="Commercial and residential tree service in downtown."
+          icon="🏢"
+          href="/locations/downtown"
+        />
+        <ServiceCard
+          title="Roebuck"
+          description="Experienced tree service serving the Roebuck community."
+          icon="🌲"
+          href="/locations/roebuck"
+        />
+        <ServiceCard
+          title="Highlands"
+          description="Premier tree care for Highlands residents and property managers."
+          icon="⛰️"
+          href="/locations/highlands"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 md:py-20 bg-green-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Left Content -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Get Your Free Quote Today
+          </h2>
+          <p class="text-lg text-green-100 mb-6">
+            No obligation estimates. Our team will assess your project and provide transparent pricing within 24 hours.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <p class="font-bold">Same-Day Response</p>
+                <p class="text-green-200 text-sm">We typically respond within 2 hours</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1
