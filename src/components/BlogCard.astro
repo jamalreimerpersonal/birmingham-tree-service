@@ -1,0 +1,92 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  date: string;
+  category: string;
+  href: string;
+  image?: string;
+}
+
+const { title, description, date, category, href, image } = Astro.props;
+
+// Format date
+const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<a href={href} class="group block h-full">
+  <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition h-full overflow-hidden flex flex-col">
+    <!-- Image -->
+    {image && (
+      <div class="relative h-48 bg-gradient-to-br from-green-100 to-green-200 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        />
+      </div>
+    )}
+
+    {!image && (
+      <div class="h-48 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center">
+        <svg class="w-16 h-16 text-green-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2v-5.5a2.972 2.972 0 002-2.5A2.972 2.972 0 0023 12.5V15a2 2 0 01-2 2z"/>
+        </svg>
+      </div>
+    )}
+
+    <!-- Content -->
+    <div class="px-6 py-6 flex-1 flex flex-col">
+      <!-- Category Badge -->
+      <div class="mb-3">
+        <span class="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">
+          {category}
+        </span>
+      </div>
+
+      <!-- Title -->
+      <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition line-clamp-2">
+        {title}
+      </h3>
+
+      <!-- Description -->
+      <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+        {description}
+      </p>
+
+      <!-- Footer -->
+      <div class="flex items-center justify-between text-xs text-gray-500 border-t pt-4">
+        <time datetime={date}>
+          {formattedDate}
+        </time>
+        <span class="text-green-600 font-bold group-hover:gap-2 flex items-center gap-1">
+          Read →
+        </span>
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+</style>
