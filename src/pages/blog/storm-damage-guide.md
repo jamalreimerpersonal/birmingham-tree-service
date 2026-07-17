@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: 'Storm Damage? Here\'s What to Do After Severe Weather'
+title: "Storm Damage? Here's What to Do After Severe Weather"
 date: '2023-12-25'
 description: 'Emergency steps after storm damage and when to call professional help.'
 ---
