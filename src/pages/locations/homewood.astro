@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import { PHONE_NUMBER, SITE_NAME } from '../../utils/constants';
+import ContactForm from '../../components/ContactForm.astro';
+---
+
+<Base
+  title="Tree Service Homewood, AL | Professional Tree Care"
+  description="Professional tree removal, trimming, and stump grinding in Homewood, AL. Licensed, insured, free estimates."
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-green-900 to-green-700 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Tree Service in Homewood</h1>
+        <p class="text-lg text-green-100">
+          Professional tree care for Homewood residents and businesses. Expert service, fair pricing, immediate availability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none mb-12">
+        <h2>Homewood's Trusted Tree Care Experts</h2>
+        <p>
+          For years, Homewood homeowners have relied on our team for professional tree services. We understand Homewood's residential character and provide meticulous service that respects your property and neighborhood.
+        </p>
+
+        <h2>Our Homewood Service Range</h2>
+        <ul>
+          <li>Safe tree removal with complete cleanup</li>
+          <li>Professional tree trimming for health and beauty</li>
+          <li>Stump grinding and removal</li>
+          <li>Emergency storm damage response</li>
+          <li>Tree disease diagnosis and treatment</li>
+          <li>Preventative tree maintenance</li>
+        </ul>
+
+        <h2>What Makes Us Different</h2>
+        <ul>
+          <li><strong>Local Expertise:</strong> Deep knowledge of Homewood trees and needs</li>
+          <li><strong>Professional Standards:</strong> ISA certified arborists</li>
+          <li><strong>Affordable Pricing:</strong> Competitive rates for quality work</li>
+          <li><strong>Respectful Service:</strong> Clean, professional crews</li>
+          <li><strong>Quick Response:</strong> Same-day and emergency service</li>
+          <li><strong>Fully Insured:</strong> Complete peace of mind</li>
+        </ul>
+
+        <h2>Common Homewood Tree Issues</h2>
+        <p>
+          Homewood's mature trees sometimes face challenges including disease, storm damage, and overgrowth. Our experts can diagnose problems and recommend solutions that protect your investment.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-green-50 border-2 border-green-200 rounded-lg p-8 mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Homewood Tree Service</h3>
+        <p class="text-gray-700 mb-6">
+          Get a free estimate for your tree service needs. We're available today.
+        </p>
+        <a 
+          href={`tel:${PHONE_NUMBER}`}
+          class="button-primary inline-block"
+        >
+          Call for Free Quote
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get Your Free Estimate</h3>
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</Base>
