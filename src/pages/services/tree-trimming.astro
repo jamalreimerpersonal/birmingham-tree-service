@@ -1,0 +1,112 @@
+---
+import Base from '../../layouts/Base.astro';
+import { PHONE_NUMBER, SITE_NAME } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+import ContactForm from '../../components/ContactForm.astro';
+
+const schema = generateServiceSchema({
+  name: 'Professional Tree Trimming',
+  description: 'Expert tree trimming and pruning services in Birmingham for health, safety, and appearance.',
+  provider: SITE_NAME
+});
+---
+
+<Base
+  title="Professional Tree Trimming in Birmingham, AL | Tree Service Birmingham"
+  description="Expert tree trimming and pruning in Birmingham. Enhance tree health and property appearance. Licensed, insured, free quotes."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-green-900 to-green-700 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Tree Trimming</h1>
+        <p class="text-lg text-green-100">
+          Keep your trees healthy, safe, and beautiful with expert trimming and pruning services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none mb-12">
+        <h2>Why Regular Tree Trimming Matters</h2>
+        <p>
+          Regular tree trimming is essential for maintaining tree health, improving appearance, and preventing hazards. Dead branches, weak growth, and overgrown limbs can threaten your property and neighborhood. Our certified arborists know exactly how to trim trees for optimal health and safety.
+        </p>
+
+        <h2>Benefits of Professional Trimming</h2>
+        <ul>
+          <li><strong>Improved Health:</strong> Removes dead, diseased, or weak branches</li>
+          <li><strong>Enhanced Growth:</strong> Encourages strong structural development</li>
+          <li><strong>Better Appearance:</strong> Shapes trees for aesthetic appeal</li>
+          <li><strong>Increased Light:</strong> Opens canopy to benefit underlying vegetation</li>
+          <li><strong>Safety:</strong> Removes branches threatening structures and power lines</li>
+          <li><strong>Pest Prevention:</strong> Eliminates branches vulnerable to infestations</li>
+        </ul>
+
+        <h2>Our Trimming Services</h2>
+        <h3>Crown Cleaning</h3>
+        <p>
+          Selective removal of dead, diseased, crossing, and rubbing branches to improve tree structure and appearance.
+        </p>
+
+        <h3>Crown Thinning</h3>
+        <p>
+          Selective removal of branches to increase light penetration and air flow through the canopy, improving tree health.
+        </p>
+
+        <h3>Crown Raising</h3>
+        <p>
+          Removal of lower branches to provide clearance for structures, vehicles, and pedestrians.
+        </p>
+
+        <h3>Crown Reduction</h3>
+        <p>
+          Careful reduction of tree height and spread while maintaining natural form and health.
+        </p>
+
+        <h2>When to Trim Trees</h2>
+        <ul>
+          <li>Spring and fall are ideal trimming seasons</li>
+          <li>Dead branches can be removed anytime</li>
+          <li>Storm damage requires immediate attention</li>
+          <li>Most trees benefit from annual maintenance</li>
+          <li>Young trees should be pruned for strong structure</li>
+        </ul>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li><strong>Certified Arborists:</strong> ISA-certified expertise</li>
+          <li><strong>Precision Work:</strong> Techniques that preserve tree health</li>
+          <li><strong>Licensed & Insured:</strong> Complete protection for your property</li>
+          <li><strong>Quick Service:</strong> Same-day and next-day appointments</li>
+          <li><strong>Competitive Rates:</strong> Best pricing in Birmingham</li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-green-50 border-2 border-green-200 rounded-lg p-8 mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Schedule Your Tree Trimming</h3>
+        <p class="text-gray-700 mb-6">
+          Get a free estimate for professional tree trimming. Our team will assess your trees and recommend the best approach.
+        </p>
+        <a 
+          href={`tel:${PHONE_NUMBER}`}
+          class="button-primary inline-block"
+        >
+          Call for Free Quote
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get a Free Estimate</h3>
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</Base>
