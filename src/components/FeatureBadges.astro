@@ -1,0 +1,54 @@
+---
+interface Props {
+  columns?: number;
+}
+
+const { columns = 3 } = Astro.props;
+
+const features = [
+  {
+    icon: '✓',
+    title: 'Licensed & Insured',
+    description: 'Fully licensed and insured for your peace of mind.'
+  },
+  {
+    icon: '🛡️',
+    title: 'Safety First',
+    description: 'Professional equipment and safety protocols on every job.'
+  },
+  {
+    icon: '⚡',
+    title: '24/7 Emergency',
+    description: 'Available anytime for emergency tree removal.'
+  },
+  {
+    icon: '💰',
+    title: 'Free Estimates',
+    description: 'No obligation quotes for all services.'
+  },
+  {
+    icon: '⭐',
+    title: '4.9+ Rating',
+    description: 'Trusted by 300+ satisfied customers.'
+  },
+  {
+    icon: '🚀',
+    title: 'Quick Service',
+    description: 'Same-day and next-day appointments available.'
+  }
+];
+---
+
+<section class="py-12 md:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class={`grid grid-cols-1 md:grid-cols-${columns} gap-6 md:gap-8`}>
+      {features.map((feature) => (
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-green-600">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
