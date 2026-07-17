@@ -1,0 +1,65 @@
+---
+import { PHONE_NUMBER, SITE_NAME, EMAIL } from '../utils/constants';
+---
+
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <!-- Company Info -->
+      <div>
+        <h4 class="font-bold text-white mb-4">{SITE_NAME}</h4>
+        <p class="text-sm mb-4">
+          Professional tree service serving the Birmingham area with quality work and customer satisfaction.
+        </p>
+        <a 
+          href={`tel:${PHONE_NUMBER}`}
+          class="text-green-400 hover:text-green-300 font-bold"
+        >
+          {PHONE_NUMBER}
+        </a>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="font-bold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/services/tree-removal" class="hover:text-white transition">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming" class="hover:text-white transition">Tree Trimming</a></li>
+          <li><a href="/services/stump-grinding" class="hover:text-white transition">Stump Grinding</a></li>
+          <li><a href="/services/emergency-removal" class="hover:text-white transition">Emergency Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="font-bold text-white mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about" class="hover:text-white transition">About Us</a></li>
+          <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+          <li><a href="/locations" class="hover:text-white transition">Service Areas</a></li>
+          <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-bold text-white mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Available 24/7 for emergencies</li>
+          <li><a href={`tel:${PHONE_NUMBER}`} class="hover:text-white transition">{PHONE_NUMBER}</a></li>
+          <li><a href={`mailto:${EMAIL}`} class="hover:text-white transition">{EMAIL}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 pt-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <p>&copy; 2024 {SITE_NAME}. All rights reserved.</p>
+        <div class="flex gap-4 md:justify-end">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
