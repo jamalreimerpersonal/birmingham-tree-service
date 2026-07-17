@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import BlogCard from '../../components/BlogCard.astro';
+
+const posts = [
+  {
+    title: 'How Much Does Tree Removal Cost in Birmingham?',
+    description: 'Understanding tree removal pricing. Factors that affect cost and what to expect.',
+    date: '2024-01-15',
+    category: 'Pricing',
+    href: '/blog/tree-removal-cost'
+  },
+  {
+    title: 'Tree Trimming vs. Tree Removal: When to Do Each',
+    description: 'Learn when to trim trees and when removal is the better option for your property.',
+    date: '2024-01-08',
+    category: 'Tree Care',
+    href: '/blog/trimming-vs-removal'
+  },
+  {
+    title: 'Signs Your Tree is Diseased and Needs Removal',
+    description: 'Recognizing common tree diseases and when professional removal becomes necessary.',
+    date: '2024-01-01',
+    category: 'Tree Health',
+    href: '/blog/diseased-trees'
+  },
+  {
+    title: 'Storm Damage? Here\'s What to Do After Severe Weather',
+    description: 'Emergency steps after storm damage and when to call professional tree removal.',
+    date: '2023-12-25',
+    category: 'Emergency',
+    href: '/blog/storm-damage-guide'
+  },
+  {
+    title: 'Best Time to Trim Trees: Seasonal Guide for Birmingham',
+    description: 'When to trim different types of trees for optimal health and growth.',
+    date: '2023-12-18',
+    category: 'Seasonal',
+    href: '/blog/tree-trimming-season'
+  }
+];
+---
+
+<Base
+  title="Tree Service Blog | Tips, Guides, and Tree Care Articles"
+  description="Expert tree care tips, guides, and articles. Learn about tree removal, trimming, health, and more."
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-green-900 to-green-700 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Tree Care Tips & Guides</h1>
+        <p class="text-lg text-green-100">
+          Expert advice on tree removal, trimming, health, and seasonal care. Learn from certified arborists.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.title}
+            description={post.description}
+            date={post.date}
+            category={post.category}
+            href={post.href}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
