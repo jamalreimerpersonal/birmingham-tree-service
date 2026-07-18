@@ -1,0 +1,180 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+
+const schema = generateServiceSchema({
+  name: 'Professional Tree Trimming & Pruning',
+  description: 'Expert tree trimming and pruning to enhance tree health and appearance in Birmingham, AL',
+  provider: SITE_NAME
+});
+
+const pageTitle = 'Professional Tree Trimming & Pruning in Birmingham, AL | Expert Arborists';
+const pageDescription = 'Professional tree trimming and pruning services. Enhance tree health, improve appearance, and ensure safety. Licensed arborists serving Birmingham.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Tree Trimming & Pruning</h1>
+          <p class="text-xl text-green-100 mb-8">
+            Expert trimming and pruning to enhance tree health, improve appearance, and ensure safety. Our certified arborists use proven techniques for optimal results.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-center"
+            >
+              Call Now for Free Quote
+            </a>
+            <a
+              href="/contact"
+              class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition text-center"
+            >
+              Request Online
+            </a>
+          </div>
+        </div>
+        <div class="bg-green-600 rounded-lg p-8">
+          <p class="text-green-100 text-lg leading-relaxed">Professional trimming extends tree lifespan by 10-15 years and improves structural integrity while enhancing curb appeal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Benefits of Professional Tree Trimming</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">✓ Enhanced Tree Health</h3>
+          <p class="text-gray-600">Removes dead, diseased, and crossing branches, improving air circulation and promoting new growth.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🌳 Improved Safety</h3>
+          <p class="text-gray-600">Eliminates hazardous branches that could fall during storms and damage your home or property.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">📈 Structural Strength</h3>
+          <p class="text-gray-600">Proper pruning creates stronger branch structures and prevents splitting and storm damage.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🏡 Increased Curb Appeal</h3>
+          <p class="text-gray-600">Well-trimmed trees enhance your home's aesthetic and can increase property value.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">☀️ More Sunlight</h3>
+          <p class="text-gray-600">Opens the canopy to allow more light to reach your lawn and landscaping below.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">⚡ Prevents Overgrowth</h3>
+          <p class="text-gray-600">Regular trimming prevents branches from growing into power lines, roofs, and gutters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trimming Types -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Types of Tree Trimming Services</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Crown Thinning</h3>
+          <p class="text-gray-600">Selective removal of branches to reduce density while maintaining tree shape. Improves light penetration and air circulation.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Crown Raising</h3>
+          <p class="text-gray-600">Removes lower branches to increase clearance above ground, sidewalks, driveways, and building roofs.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Crown Shaping</h3>
+          <p class="text-gray-600">Expertly sculpts the tree to enhance natural form, improve aesthetics, and promote healthy growth patterns.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Deadwood Removal</h3>
+          <p class="text-gray-600">Removes dead, diseased, and damaged branches to prevent pest infestation and improve overall tree health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Professional Trimming Process</h2>
+
+      <div class="space-y-6">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">1</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Consultation & Assessment</h3>
+            <p class="text-gray-600 mt-2">We evaluate tree health, species, growth patterns, and your goals to develop a customized trimming plan.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">2</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Expert Pruning</h3>
+            <p class="text-gray-600 mt-2">Using proper techniques, we remove branches while maintaining the tree's natural shape and health.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">3</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Clean-Up & Debris Removal</h3>
+            <p class="text-gray-600 mt-2">All branches and debris are cleaned up and hauled away, leaving your yard pristine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Schedule Your Tree Trimming Today</h2>
+      <p class="text-xl text-green-100 mb-8">
+        Our certified arborists will assess your trees and provide expert recommendations for optimal health and appearance.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={`tel:${PHONE_NUMBER}`}
+          class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-lg"
+        >
+          Call {PHONE_NUMBER}
+        </a>
+        <a
+          href="/contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-900 transition text-lg"
+        >
+          Request Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

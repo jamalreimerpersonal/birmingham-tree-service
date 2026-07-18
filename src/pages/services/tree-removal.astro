@@ -1,0 +1,228 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+
+const schema = generateServiceSchema({
+  name: 'Professional Tree Removal Service',
+  description: 'Expert tree removal with stump grinding and debris cleanup in Birmingham, AL',
+  provider: SITE_NAME
+});
+
+const pageTitle = 'Professional Tree Removal Service in Birmingham, AL | Expert Tree Care';
+const pageDescription = 'Complete tree removal with stump grinding and debris cleanup. Licensed, insured, 24/7 service. Free estimates for Birmingham area tree removal.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Tree Removal in Birmingham</h1>
+          <p class="text-xl text-green-100 mb-8">
+            Safe, efficient tree removal with complete stump grinding and debris cleanup. Our certified arborists handle trees of any size with precision and care.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-center"
+            >
+              Call Now for Free Quote
+            </a>
+            <a
+              href="/contact"
+              class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition text-center"
+            >
+              Request Online
+            </a>
+          </div>
+        </div>
+        <div class="bg-green-600 rounded-lg p-8 text-center">
+          <div class="text-6xl font-bold mb-4">24/7</div>
+          <p class="text-green-100 text-lg">Emergency Tree Removal Available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Our Tree Removal Service?</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">✓</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Certified Arborists</h3>
+          <p class="text-gray-600">Our team includes ISA-certified arborists with years of specialized training in safe tree removal techniques.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">🛡️</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Fully Licensed & Insured</h3>
+          <p class="text-gray-600">Complete liability and property damage insurance protects your home and gives you peace of mind.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">⚙️</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Complete Stump Grinding</h3>
+          <p class="text-gray-600">We grind stumps 12-18 inches below ground level, preventing regrowth and future problems.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">🚛</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Full Debris Cleanup</h3>
+          <p class="text-gray-600">We haul away all wood chips, logs, and debris. Your yard is left clean and ready to use.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">💰</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Pricing</h3>
+          <p class="text-gray-600">No hidden fees. You'll know the exact cost before we begin any work on your property.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Same-Day Service</h3>
+          <p class="text-gray-600">Emergency removals handled promptly. Non-emergency appointments available within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Tree Removal Process</h2>
+
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+              <span class="text-xl font-bold">1</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Professional Assessment</h3>
+            <p class="text-gray-600 mt-2">We evaluate the tree's size, health, location, and nearby structures to determine the safest removal method.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+              <span class="text-xl font-bold">2</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Precision Removal</h3>
+            <p class="text-gray-600 mt-2">Using specialized equipment and techniques, we carefully fell the tree in sections to protect your property.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+              <span class="text-xl font-bold">3</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Complete Stump Grinding</h3>
+            <p class="text-gray-600 mt-2">We grind the stump and roots 12-18 inches below ground, leaving clean mulch for your landscape.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+              <span class="text-xl font-bold">4</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Site Cleanup & Restoration</h3>
+            <p class="text-gray-600 mt-2">All debris is hauled away. Your yard is left clean, level, and ready for landscaping or replanting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Tree Removal FAQs</h2>
+
+      <div class="space-y-6">
+        <details class="bg-gray-50 p-6 rounded-lg">
+          <summary class="font-bold text-lg text-gray-900 cursor-pointer">How much does tree removal cost?</summary>
+          <p class="text-gray-600 mt-4">Cost depends on tree size, location, and complexity. We provide free estimates. Most residential removals range from $500-$2,500 including stump grinding.</p>
+        </details>
+
+        <details class="bg-gray-50 p-6 rounded-lg">
+          <summary class="font-bold text-lg text-gray-900 cursor-pointer">Is tree removal safe near my house?</summary>
+          <p class="text-gray-600 mt-4">Yes. Our certified arborists use advanced techniques and equipment to safely remove trees near homes, power lines, and other structures.</p>
+        </details>
+
+        <details class="bg-gray-50 p-6 rounded-lg">
+          <summary class="font-bold text-lg text-gray-900 cursor-pointer">Do you remove storm-damaged trees?</summary>
+          <p class="text-gray-600 mt-4">Yes. We offer 24/7 emergency removal for storm-damaged trees. Call immediately after a storm and we'll prioritize your property.</p>
+        </details>
+
+        <details class="bg-gray-50 p-6 rounded-lg">
+          <summary class="font-bold text-lg text-gray-900 cursor-pointer">What happens to the wood?</summary>
+          <p class="text-gray-600 mt-4">We chip all branches and haul away debris. You can request clean wood chips be left for mulch or we'll remove everything.</p>
+        </details>
+
+        <details class="bg-gray-50 p-6 rounded-lg">
+          <summary class="font-bold text-lg text-gray-900 cursor-pointer">Do I need a permit for tree removal?</summary>
+          <p class="text-gray-600 mt-4">In some Birmingham neighborhoods, yes. We can help determine permit requirements and obtain them if needed.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Serving Birmingham & Surrounding Areas</h2>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+        We provide professional tree removal services throughout Birmingham, including Mountain Brook, Vestavia Hills, Homewood, and all surrounding neighborhoods.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+        <div class="p-4"><a href="/locations/mountain-brook" class="text-green-600 hover:text-green-700 font-semibold">Mountain Brook</a></div>
+        <div class="p-4"><a href="/locations/vestavia-hills" class="text-green-600 hover:text-green-700 font-semibold">Vestavia Hills</a></div>
+        <div class="p-4"><a href="/locations/homewood" class="text-green-600 hover:text-green-700 font-semibold">Homewood</a></div>
+        <div class="p-4"><a href="/locations/downtown" class="text-green-600 hover:text-green-700 font-semibold">Downtown</a></div>
+        <div class="p-4"><a href="/locations/roebuck" class="text-green-600 hover:text-green-700 font-semibold">Roebuck</a></div>
+        <div class="p-4"><a href="/locations/highlands" class="text-green-600 hover:text-green-700 font-semibold">Highlands</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Remove That Tree?</h2>
+      <p class="text-xl text-green-100 mb-8">
+        Get a free, no-obligation quote from our certified arborists. Call today or request a quote online.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={`tel:${PHONE_NUMBER}`}
+          class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-lg"
+        >
+          Call {PHONE_NUMBER}
+        </a>
+        <a
+          href="/contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-900 transition text-lg"
+        >
+          Request Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

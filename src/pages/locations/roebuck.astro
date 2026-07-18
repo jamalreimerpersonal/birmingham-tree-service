@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+
+const pageTitle = 'Tree Service in Roebuck, AL | Professional Tree Care';
+const pageDescription = 'Professional tree removal, trimming, and maintenance serving the Roebuck community with expert arboriculture.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Tree Service in Roebuck</h1>
+      <p class="text-xl text-green-100 mb-8">Experienced tree removal and maintenance for Roebuck residents. Quality service with professional expertise.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">Call {PHONE_NUMBER}</a>
+        <a href="/contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition">Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Roebuck Tree Care Specialists</h2>
+      <p class="text-gray-600 mb-8">We serve the Roebuck community with complete tree care services. From routine trimming to emergency storm removal, our certified arborists handle every job with professionalism and care.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-4">Our Services Include:</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Tree removal & stump grinding</li>
+            <li>✓ Professional tree trimming</li>
+            <li>✓ Storm damage removal</li>
+            <li>✓ Debris cleanup & hauling</li>
+            <li>✓ Maintenance programs</li>
+          </ul>
+        </div>
+        <div class="bg-green-50 p-8 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-4">Quality Assurance:</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Licensed & fully insured</li>
+            <li>✓ Certified ISA arborists</li>
+            <li>✓ 24/7 emergency response</li>
+            <li>✓ Free estimates</li>
+            <li>✓ Professional equipment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Need Tree Service in Roebuck?</h2>
+      <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition inline-block text-lg">
+        Call {PHONE_NUMBER}
+      </a>
+    </div>
+  </section>
+</Base>

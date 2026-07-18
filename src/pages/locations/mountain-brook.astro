@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+
+const pageTitle = 'Tree Service in Mountain Brook, AL | Professional Arborist';
+const pageDescription = 'Professional tree removal, trimming, and stump grinding for Mountain Brook residents. Serving Birminghams most prestigious neighborhood.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Tree Service in Mountain Brook</h1>
+          <p class="text-xl text-green-100 mb-8">
+            Trusted tree removal, trimming, and stump grinding for Mountain Brook's finest estates and homes. We serve this prestigious community with expertise and care.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-center">
+              Call {PHONE_NUMBER}
+            </a>
+            <a href="/contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition text-center">
+              Get Free Quote
+            </a>
+          </div>
+        </div>
+        <div class="bg-green-600 rounded-lg p-8">
+          <p class="text-green-100 text-lg">Serving Mountain Brook since 2015 with professional arboriculture and customer service excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Mountain Brook -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Professional Tree Care for Mountain Brook</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-gray-600 mb-4">Mountain Brook is known for its beautiful mature trees, manicured landscapes, and residential excellence. We understand the value these properties represent and provide tree care that matches your standards.</p>
+          <p class="text-gray-600">Our services help preserve the natural beauty and property values that make Mountain Brook exceptional, from routine maintenance to emergency storm damage removal.</p>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-4">Services for Mountain Brook Residents:</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Tree removal & stump grinding</li>
+            <li>✓ Professional tree trimming & pruning</li>
+            <li>✓ 24/7 emergency storm damage service</li>
+            <li>✓ Landscape tree preservation</li>
+            <li>✓ Estate tree care</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Mountain Brook Residents Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">✓</div>
+          <h3 class="font-bold text-gray-900 mb-2">Licensed & Insured</h3>
+          <p class="text-gray-600 text-sm">Full liability coverage protects your valuable property.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">👨‍💼</div>
+          <h3 class="font-bold text-gray-900 mb-2">Certified Arborists</h3>
+          <p class="text-gray-600 text-sm">ISA-certified professionals with specialized expertise.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg">
+          <div class="text-4xl text-green-600 mb-4">🎯</div>
+          <h3 class="font-bold text-gray-900 mb-2">Precision Work</h3>
+          <p class="text-gray-600 text-sm">Meticulous care for your landscape and property.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for Expert Tree Care?</h2>
+      <p class="text-xl text-green-100 mb-8">Mountain Brook's trusted tree service professionals are ready to help.</p>
+      <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-lg inline-block">
+        Call {PHONE_NUMBER}
+      </a>
+    </div>
+  </section>
+</Base>

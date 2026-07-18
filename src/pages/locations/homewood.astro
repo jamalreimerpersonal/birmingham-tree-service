@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+
+const pageTitle = 'Tree Service in Homewood, AL | Professional Arborists';
+const pageDescription = 'Professional tree removal, trimming, and stump grinding serving Homewood. Quality tree care for your home and property.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Tree Service in Homewood, Alabama</h1>
+      <p class="text-xl text-green-100 mb-8">Serving Homewood with quality tree removal, trimming, and maintenance. Experienced professionals caring for your property.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">Call {PHONE_NUMBER}</a>
+        <a href="/contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition">Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Homewood's Trusted Tree Care Experts</h2>
+      <p class="text-gray-600 mb-8">For years, Homewood residents have trusted us with their tree care needs. We provide complete tree services including removal, trimming, stump grinding, and emergency storm damage response.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">What We Do:</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Tree removal & stump grinding</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Professional tree trimming</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Emergency storm removal</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Debris cleanup & hauling</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Landscape preservation</span></li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Choose Us:</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Licensed & insured professionals</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>24/7 emergency response</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Free estimates</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Certified arborists</span></li>
+            <li class="flex gap-3"><span class="text-green-600">✓</span> <span>Complete cleanup included</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Homewood Tree Service You Can Trust</h2>
+      <a href={`tel:${PHONE_NUMBER}`} class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition inline-block text-lg">
+        {PHONE_NUMBER}
+      </a>
+    </div>
+  </section>
+</Base>

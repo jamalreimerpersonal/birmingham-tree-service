@@ -1,0 +1,190 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+
+const schema = generateServiceSchema({
+  name: '24/7 Emergency Tree Removal Service',
+  description: 'Emergency tree removal available 24/7 in Birmingham, AL. Storm damage and dangerous tree removal.',
+  provider: SITE_NAME
+});
+
+const pageTitle = '24/7 Emergency Tree Removal in Birmingham, AL | Storm Damage Service';
+const pageDescription = '24/7 emergency tree removal for storm damage and dangerous trees. We respond quickly to storms and hazardous situations in Birmingham.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-red-700 to-red-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">24/7 Emergency Tree Removal</h1>
+          <p class="text-xl text-red-100 mb-8">
+            Dangerous tree damage? We're available around the clock to handle storm damage, fallen trees, and hazardous situations safely and quickly.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              class="bg-white text-red-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-center text-lg"
+            >
+              Call Now {PHONE_NUMBER}
+            </a>
+          </div>
+          <p class="text-red-200 mt-6 text-sm">Available 24 hours a day, 7 days a week, including holidays</p>
+        </div>
+        <div class="bg-red-600 rounded-lg p-8 text-center">
+          <div class="text-6xl font-bold mb-4">24/7</div>
+          <p class="text-red-100 text-lg">Emergency Response Available</p>
+          <p class="text-red-200 text-sm mt-4">Rapid response times • Licensed & Insured • Professional & Safe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- When You Need Emergency Service -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">When You Need Emergency Tree Removal</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">⚠️ Storm Damage</h3>
+          <p class="text-gray-600">Trees damaged by high winds, lightning, or ice storms that threaten your home or safety.</p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🌳 Fallen Trees</h3>
+          <p class="text-gray-600">Trees that have fallen on your house, driveway, or property blocking access.</p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">⚡ Power Line Contact</h3>
+          <p class="text-gray-600">Trees touching power lines creating hazardous situations (we coordinate with utilities).</p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🔴 Hanging Branches</h3>
+          <p class="text-gray-600">Dead or broken branches hanging dangerously over your home or property.</p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🌪️ Severe Weather</h3>
+          <p class="text-gray-600">Tree damage from hurricanes, tornadoes, heavy ice, or severe weather events.</p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🚨 Dangerous Trees</h3>
+          <p class="text-gray-600">Any tree that poses an immediate threat to people, animals, or structures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Us for Emergency Services</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">✓</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Available 24/7/365</h3>
+          <p class="text-gray-600">We respond to emergencies any time of day or night, including holidays and weekends.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Rapid Response</h3>
+          <p class="text-gray-600">We prioritize emergency calls and arrive quickly to assess and address dangerous situations.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">🛡️</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Licensed & Insured</h3>
+          <p class="text-gray-600">Full liability and property damage coverage ensures your protection in emergencies.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">👨‍💼</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Certified Professionals</h3>
+          <p class="text-gray-600">Our arborists are trained in emergency tree removal and safety protocols.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">🚗</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile Equipment</h3>
+          <p class="text-gray-600">We arrive with specialized equipment to handle any emergency situation safely.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <div class="text-4xl text-red-600 mb-4">✨</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Clean-Up Service</h3>
+          <p class="text-gray-600">We handle complete debris removal and site restoration after emergency work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Do in Emergency -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">What To Do If You Have Emergency Tree Damage</h2>
+
+      <div class="bg-red-50 border-l-4 border-red-600 p-8 rounded-lg mb-8">
+        <h3 class="text-2xl font-bold text-red-900 mb-6">Immediate Steps:</h3>
+        <ol class="space-y-4 text-gray-700">
+          <li class="flex gap-4">
+            <span class="text-red-600 font-bold flex-shrink-0">1.</span>
+            <span><strong>Ensure Safety First</strong> - Move away from fallen trees and downed power lines. Keep children and pets away from damage.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-red-600 font-bold flex-shrink-0">2.</span>
+            <span><strong>Call Us Immediately</strong> - Call {PHONE_NUMBER} to report emergency tree damage. We'll dispatch a crew right away.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-red-600 font-bold flex-shrink-0">3.</span>
+            <span><strong>Document Damage</strong> - Take photos and videos for insurance claims if safe to do so.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-red-600 font-bold flex-shrink-0">4.</span>
+            <span><strong>Contact Your Insurance</strong> - Report the damage to your homeowner's insurance promptly.</span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-red-600 font-bold flex-shrink-0">5.</span>
+            <span><strong>Let Professionals Handle It</strong> - Don't attempt DIY removal. Let our certified crew handle the work safely.</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-lg">
+        <h3 class="text-xl font-bold text-blue-900 mb-4">Important Safety Notes:</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Never touch downed power lines—they may be live</li>
+          <li>• Stay clear of unstable or hanging branches</li>
+          <li>• Don't use chainsaws unless you're experienced</li>
+          <li>• Keep children and pets away from storm debris</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-red-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Emergency Tree Damage? Call Now</h2>
+      <p class="text-xl text-red-100 mb-8">
+        We're standing by 24/7 to handle your emergency. Rapid response, professional service, complete cleanup.
+      </p>
+      <a
+        href={`tel:${PHONE_NUMBER}`}
+        class="bg-white text-red-900 px-12 py-5 rounded-lg font-bold hover:bg-gray-100 transition text-2xl inline-block"
+      >
+        Call {PHONE_NUMBER}
+      </a>
+      <p class="text-red-200 mt-6">Available 24 hours a day, 7 days a week</p>
+    </div>
+  </section>
+</Base>

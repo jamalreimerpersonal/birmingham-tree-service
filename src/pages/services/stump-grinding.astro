@@ -1,0 +1,184 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE_NAME, PHONE_NUMBER } from '../../utils/constants';
+import { generateServiceSchema } from '../../utils/schema';
+
+const schema = generateServiceSchema({
+  name: 'Professional Stump Grinding Service',
+  description: 'Complete stump grinding and stump removal in Birmingham, AL. Eliminate stumps 12-18 inches below ground.',
+  provider: SITE_NAME
+});
+
+const pageTitle = 'Professional Stump Grinding in Birmingham, AL | Complete Removal';
+const pageDescription = 'Expert stump grinding service removing stumps 12-18 inches below ground. Prevent regrowth and reclaim your yard space. Free quotes.';
+---
+
+<Base title={pageTitle} description={pageDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-700 to-green-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Stump Grinding Services</h1>
+          <p class="text-xl text-green-100 mb-8">
+            Complete stump removal with grinding 12-18 inches below ground. Reclaim your yard space without hazards or regrowth concerns.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              class="bg-white text-green-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-center"
+            >
+              Call Now for Free Quote
+            </a>
+            <a
+              href="/contact"
+              class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition text-center"
+            >
+              Request Online
+            </a>
+          </div>
+        </div>
+        <div class="bg-green-600 rounded-lg p-8">
+          <div class="text-5xl font-bold mb-2">12-18"</div>
+          <p class="text-green-100">Ground-level grinding prevents regrowth and future root problems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Grind Stumps -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why You Need Professional Stump Grinding</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">❌ Prevents Regrowth</h3>
+          <p class="text-gray-600">Grinding 12-18 inches below ground eliminates the root system, preventing sprouting and regrowth.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🪲 Stops Pest Infestation</h3>
+          <p class="text-gray-600">Decomposing stumps attract termites, carpenter ants, and other harmful insects. Grinding eliminates this problem.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🏠 Improves Safety</h3>
+          <p class="text-gray-600">Removes trip hazards and obstacles in your yard, making it safer for children, pets, and guests.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">📈 Increases Property Value</h3>
+          <p class="text-gray-600">A clean, stump-free yard enhances curb appeal and can increase your home's market value.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">🌳 Reclaims Yard Space</h3>
+          <p class="text-gray-600">Plant a new tree, create a garden, or build a patio where the old stump stood.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">💰 Cost-Effective</h3>
+          <p class="text-gray-600">Professional grinding is more affordable than expensive delayed removal or chemical treatments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stump Grinding Facts -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Stump Grinding Facts</h2>
+
+      <div class="bg-white p-12 rounded-lg border-l-4 border-green-600">
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex gap-3">
+            <span class="text-green-600 font-bold">✓</span>
+            <span>A tree stump can live for decades and continue sprouting new growth</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-green-600 font-bold">✓</span>
+            <span>Termites can travel from a stump to your home through buried roots</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-green-600 font-bold">✓</span>
+            <span>Our grinders reach 12-18 inches below ground, destroying the entire root system</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-green-600 font-bold">✓</span>
+            <span>The resulting mulch can be used in landscaping or removed</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-green-600 font-bold">✓</span>
+            <span>Professional grinding takes 1-4 hours depending on stump size</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Stump Grinding Process</h2>
+
+      <div class="space-y-6">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">1</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Inspection & Preparation</h3>
+            <p class="text-gray-600 mt-2">We assess the stump, identify underground obstacles like rocks or utilities, and prepare the work area.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">2</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Professional Grinding</h3>
+            <p class="text-gray-600 mt-2">Our powerful grinding equipment removes the stump and roots 12-18 inches below ground level.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white font-bold">3</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">Site Restoration</h3>
+            <p class="text-gray-600 mt-2">The resulting mulch is spread or removed. The area is leveled and ready for landscaping.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-green-900 text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Get Your Stumps Ground Today</h2>
+      <p class="text-xl text-green-100 mb-8">
+        Eliminate stumps and reclaim your yard with professional stump grinding. Get a free quote.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={`tel:${PHONE_NUMBER}`}
+          class="bg-white text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition text-lg"
+        >
+          Call {PHONE_NUMBER}
+        </a>
+        <a
+          href="/contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-900 transition text-lg"
+        >
+          Request Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
