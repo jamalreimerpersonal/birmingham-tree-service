@@ -1,0 +1,4 @@
+# Files to ignore when deploying static assets
+node_modules
+.astro
+dist
