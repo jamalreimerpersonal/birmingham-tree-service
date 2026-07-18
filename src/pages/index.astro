@@ -3,7 +3,6 @@ import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ContactForm from '../components/ContactForm.astro';
 import ServiceCard from '../components/ServiceCard.astro';
-import ContactForm from '../components/ContactForm.astro';
 import { SITE_NAME, PHONE_NUMBER } from '../utils/constants';
 import { generateLocalBusinessSchema } from '../utils/schema';
 const schema = generateLocalBusinessSchema({
@@ -28,9 +27,6 @@ const schema = generateLocalBusinessSchema({
 
   <!-- Hero Section -->
   <HeroSection />
-
-  <!-- Feature Badges -->
-  <FeatureBadges columns={3} />
 
   <!-- Services Section -->
   <section class="py-16 md:py-20 bg-gray-50">
