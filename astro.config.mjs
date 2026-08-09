@@ -1,12 +1,10 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: process.env.SITE_URL || 'https://birmingham-tree-service.pages.dev',
   integrations: [
     tailwind(),
-    sitemap(),
   ],
   image: {
     domains: ['images.unsplash.com'],
