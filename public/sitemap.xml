@@ -5,11 +5,63 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://birminghamtreecompany.com/blog/diseased-trees/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/blog/storm-damage-guide/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/blog/tree-removal-cost/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/blog/tree-trimming-season/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/blog/trimming-vs-removal/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/services/emergency-removal/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/services/stump-grinding/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://birminghamtreecompany.com/services/tree-removal/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birminghamtreecompany.com/services/tree-trimming/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/downtown/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/highlands/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/homewood/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/mountain-brook/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/roebuck/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birminghamtreecompany.com/locations/vestavia-hills/</loc>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
