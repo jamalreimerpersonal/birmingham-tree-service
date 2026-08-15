@@ -3,26 +3,28 @@ import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ContactForm from '../components/ContactForm.astro';
 import ServiceCard from '../components/ServiceCard.astro';
-import { SITE_NAME, PHONE_NUMBER } from '../utils/constants';
+import { SITE_NAME, PHONE_NUMBER, SITE_URL } from '../utils/constants';
 import { generateLocalBusinessSchema } from '../utils/schema';
 const schema = generateLocalBusinessSchema({
   name: SITE_NAME,
-  url: 'https://birmingham-tree-service.pages.dev',
+  url: SITE_URL,
   phone: PHONE_NUMBER,
-  address: {
-    street: '123 Main Street',
-    city: 'Birmingham',
-    state: 'AL',
-    zip: '35203'
-  }
+  areaServed: [
+    'Birmingham, AL',
+    'Mountain Brook, AL',
+    'Vestavia Hills, AL',
+    'Homewood, AL',
+    'Roebuck, AL',
+    'Highlands, AL'
+  ]
 });
 ---
 
 <Base
   title="Professional Tree Service in Birmingham, AL | Tree Service Birmingham"
   description="Expert tree removal, trimming, and stump grinding in Birmingham. Licensed, insured, 24/7 emergency service. Free estimates available."
-  ogImage="https://birmingham-tree-service.pages.dev/og-image.jpg"
-    <meta name="google-site-verification" content="JD0kAhtiClGJHpBSAy5t6G6QhiGIV3dqJjFWzK3toJE" />
+  ogImage={`${SITE_URL}/og-image.jpg`}
+  canonical={SITE_URL}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 

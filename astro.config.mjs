@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://birmingham-tree-service.pages.dev',
+  site: process.env.SITE_URL || 'https://birminghamtreecompany.com',
   integrations: [
     tailwind(),
   ],

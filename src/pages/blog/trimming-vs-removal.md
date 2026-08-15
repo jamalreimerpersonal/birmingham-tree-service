@@ -9,7 +9,7 @@ description: 'Learn when to trim trees and when removal is the better option.'
 
 ## The Trimming vs. Removal Decision
 
-When a tree develops problems, the instinct is often to remove it. However, many tree issues can be resolved through professional trimming—a far more affordable and environmentally responsible approach. The key is understanding which problems warrant removal and which can be solved through strategic pruning.
+When a tree develops problems, the instinct is often to remove it. However, many tree issues can be resolved through professional trimming, a far more affordable and environmentally responsible approach. The key is understanding which problems warrant removal and which can be solved through strategic pruning.
 
 Mature trees provide invaluable benefits to Birmingham properties: shade that reduces cooling costs, storm protection, increased property values, erosion control, and habitat for wildlife. Before removing any tree, explore whether trimming can address the problem and preserve these benefits.
 
@@ -61,9 +61,9 @@ Some tree situations cannot be solved by trimming. Removal becomes the responsib
 
 **Irreversible disease:** Some diseases like oak wilt, Dutch elm disease, or root rot are fatal and spread to other trees. Once confirmed, removal stops spread to remaining healthy trees.
 
-**Structural failure:** Trees with major structural defects—deep cracks in the trunk, extensive internal decay, severe lean, or bark stripped by animals—cannot be reliably trimmed to safety. These trees should be removed before they fail catastrophically.
+**Structural failure:** Trees with major structural defects, deep cracks in the trunk, extensive internal decay, severe lean, or bark stripped by animals, cannot be reliably trimmed to safety. These trees should be removed before they fail catastrophically.
 
-**Hazardous location:** A tree in a dangerous location—leaning toward your home, over utilities, or too close to critical structures—might be untrimmable to safety. Complete removal is the only responsible option.
+**Hazardous location:** A tree in a dangerous location, leaning toward your home, over utilities, or too close to critical structures. Might be untrimmable to safety. Complete removal is the only responsible option.
 
 **Root system problems:** When tree roots are actively damaging foundations, breaking underground utilities, or making the tree inherently unstable, removal prevents escalating property damage.
 
@@ -102,7 +102,7 @@ Trimming costs 50-70% less than removal. This dramatic difference means trimming
 **Tree removal:** $500-$3,500+ per tree
 **Stump grinding:** $100-$300 additional
 
-This cost difference means aggressive trimming—sometimes counterintuitive to homeowners—is almost always more economical than removal.
+This cost difference means aggressive trimming. Sometimes counterintuitive to homeowners. Is almost always more economical than removal.
 
 ## Making Your Final Decision
 
@@ -126,4 +126,4 @@ Removing a mature tree means losing decades of carbon sequestration, oxygen prod
 
 ## Conclusion: Trim First, Remove Only When Necessary
 
-The default choice should be trimming—it's affordable, preserves value, and solves most problems. Remove only when professional assessment confirms the tree is truly beyond saving or poses unacceptable hazard. With professional guidance, this decision becomes clear, and your property benefits from the wisdom of preservation.
+The default choice should be trimming, it's affordable, preserves value, and solves most problems. Remove only when professional assessment confirms the tree is truly beyond saving or poses unacceptable hazard. With professional guidance, this decision becomes clear, and your property benefits from the wisdom of preservation.

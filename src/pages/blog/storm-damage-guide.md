@@ -9,7 +9,7 @@ description: 'Emergency steps after storm damage and when to call professional h
 
 ## After the Storm: Emergency Response for Tree Damage
 
-Birmingham's severe weather season brings wind, heavy rain, ice, and occasional tornadoes that can devastate trees. When a storm damages your trees, the immediate hours are critical for safety. Knowing how to respond properly—what to do, what to avoid, and when to call professionals—can prevent injuries, minimize property damage, and protect your landscape investment.
+Birmingham's severe weather season brings wind, heavy rain, ice, and occasional tornadoes that can devastate trees. When a storm damages your trees, the immediate hours are critical for safety. Knowing how to respond properly. What to do, what to avoid, and when to call professionals. Can prevent injuries, minimize property damage, and protect your landscape investment.
 
 Storm response isn't just about cleanup; it's about safety first, proper assessment second, and strategic recovery third. Many homeowners underestimate post-storm hazards and take risks that could be catastrophic.
 
@@ -23,7 +23,7 @@ After any significant storm, prioritize safety before anything else. Your proper
 
 **Unstable trees:** Trees that lean, have major splits in the trunk, or are partially uprooted are extremely hazardous. They can fail suddenly without warning, dropping heavy branches or the entire tree.
 
-**Hanging branches:** "Widow makers"—branches hung up in other trees—can fall at any moment. Don't stand beneath or try to remove these yourself.
+**Hanging branches:** "Widow makers", branches hung up in other trees. Can fall at any moment. Don't stand beneath or try to remove these yourself.
 
 **Debris hazards:** Shattered branches, broken boards, metal, and scattered materials create slipping, tripping, and cutting hazards. Wear heavy gloves and sturdy boots.
 

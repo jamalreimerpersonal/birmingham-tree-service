@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { SITE_URL, SITE_NAME, NOINDEX } from '../utils/constants';
 import '../styles/global.css';
 
 interface Props {
@@ -11,7 +12,8 @@ interface Props {
 }
 
 const { title, description, ogImage, canonical } = Astro.props;
-const siteUrl = import.meta.env.SITE_URL || 'https://birmingham-tree-service.pages.dev';
+const siteUrl = SITE_URL;
+const pageUrl = canonical || new URL(Astro.url.pathname, SITE_URL).href;
 ---
 
 <!DOCTYPE html>
@@ -23,24 +25,27 @@ const siteUrl = import.meta.env.SITE_URL || 'https://birmingham-tree-service.pag
     
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="google-site-verification" content=3BySvleUOYq7XfeNHuNuc1Ec4ObgYeT0wc-L7MeVKyw
-    
+    <meta name="google-site-verification" content="3BySvleUOYq7XfeNHuNuc1Ec4ObgYeT0wc-L7MeVKyw" />
+
+    {/* Temporary while the site is unfinished. Controlled by NOINDEX in src/utils/constants.ts */}
+    {NOINDEX && <meta name="robots" content="noindex, follow" />}
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {ogImage && <meta property="og:image" content={ogImage} />}
-    <meta property="og:url" content={canonical || siteUrl} />
-    <meta property="og:site_name" content="Tree Service Birmingham" />
-    
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:site_name" content={SITE_NAME} />
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
-    
-    <!-- Canonical -->
-    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Canonical: always emitted, never optional -->
+    <link rel="canonical" href={pageUrl} />
   </head>
 
   <body class="bg-white text-gray-900">

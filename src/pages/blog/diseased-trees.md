@@ -9,13 +9,13 @@ description: 'Recognizing common tree diseases and when removal is necessary.'
 
 ## Protecting Your Trees From Disease
 
-Birmingham's humid subtropical climate and varied tree species create ideal conditions for numerous tree diseases. Early detection and professional assessment are crucial—some diseases are manageable with treatment, while others require removal to protect the rest of your landscape. Learning to recognize disease warning signs helps you intervene before disease spreads or causes irreversible damage.
+Birmingham's humid subtropical climate and varied tree species create ideal conditions for numerous tree diseases. Early detection and professional assessment are crucial. Some diseases are manageable with treatment, while others require removal to protect the rest of your landscape. Learning to recognize disease warning signs helps you intervene before disease spreads or causes irreversible damage.
 
 Tree disease runs the gamut from cosmetic issues that don't threaten tree viability to fatal conditions that guarantee tree death. Understanding which signs demand action and which are minor helps you make informed decisions about your trees.
 
 ## Common Tree Diseases in Birmingham
 
-The Birmingham area's climate—with warm, humid summers and mild winters—creates perfect conditions for fungal diseases, bacterial infections, and pest-borne pathogens. Understanding which diseases affect specific tree species helps you take preventive action and recognize problems early when treatment might still be possible.
+The Birmingham area's climate, with warm, humid summers and mild winters. Creates perfect conditions for fungal diseases, bacterial infections, and pest-borne pathogens. Understanding which diseases affect specific tree species helps you take preventive action and recognize problems early when treatment might still be possible.
 
 ## Warning Signs of Disease
 
@@ -43,7 +43,7 @@ The Birmingham area's climate—with warm, humid summers and mild winters—crea
 
 Oak wilt is the most serious tree disease in Birmingham. This fungal disease is transmitted by beetles or through interconnected root systems, and infected oaks decline rapidly.
 
-**Signs:** Leaves wilt and brown from the branch tips inward. Red oak species show dramatic, rapid decline—often dying within a single season. White oak species decline more slowly. Leaves may remain on dead branches temporarily.
+**Signs:** Leaves wilt and brown from the branch tips inward. Red oak species show dramatic, rapid decline, often dying within a single season. White oak species decline more slowly. Leaves may remain on dead branches temporarily.
 
 **Why it matters:** Oak wilt is often fatal once established. The fungus spreads through the vascular system, blocking water transport. Once symptoms appear, the tree typically cannot be saved. Prevention (avoiding oak bark wounds during spring) and early removal (before spread to neighboring trees) are the only effective strategies.
 
@@ -63,7 +63,7 @@ Anthracnose is a fungal leaf disease that causes brown, irregular patches on lea
 
 Dutch elm disease (DED) affects elm species and is nearly always fatal. This fungal disease is spread by elm bark beetles and blocks water transport in the tree.
 
-**Signs:** Leaves wilt, yellow, and brown unexpectedly—often during the growing season. Branches die back progressively. The disease spreads through the tree rapidly, often killing mature trees within 1-2 years.
+**Signs:** Leaves wilt, yellow, and brown unexpectedly, often during the growing season. Branches die back progressively. The disease spreads through the tree rapidly, often killing mature trees within 1-2 years.
 
 **Urgency:** Once confirmed, immediate removal prevents spread to nearby elm trees. DED spreads through connected root systems, so removing infected trees protects the broader urban forest.
 
@@ -71,7 +71,7 @@ Dutch elm disease (DED) affects elm species and is nearly always fatal. This fun
 
 ## When Professional Assessment Becomes Critical
 
-The decision to treat or remove a diseased tree should never be made by guesswork. Professional diagnosis changes everything—sometimes revealing the disease is manageable, other times confirming removal is necessary.
+The decision to treat or remove a diseased tree should never be made by guesswork. Professional diagnosis changes everything. Sometimes revealing the disease is manageable, other times confirming removal is necessary.
 
 **Contact a certified arborist if you notice:**
 - Unexpected wilting or leaf discoloration
@@ -133,4 +133,4 @@ Preventing disease is far better than treating it.
 
 ## Conclusion: Early Action Saves Trees
 
-Many tree diseases can be managed if caught early. However, some diseases (oak wilt, DED) are fatal and demand immediate removal. The key is professional assessment—never guess about tree disease. A certified arborist's diagnosis clarifies whether treatment is viable or removal is necessary, helping you protect your valuable landscape investment.
+Many tree diseases can be managed if caught early. However, some diseases (oak wilt, DED) are fatal and demand immediate removal. The key is professional assessment, never guess about tree disease. A certified arborist's diagnosis clarifies whether treatment is viable or removal is necessary, helping you protect your valuable landscape investment.

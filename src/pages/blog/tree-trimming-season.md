@@ -28,20 +28,20 @@ Spring trimming allows trees to heal quickly using the energy from their newly e
 - Remove branches damaged by winter storms
 
 **Spring Trimming Considerations:**
-Avoid heavy pruning on weak trees in early spring—wait until they show strong new growth. Some ornamental flowering trees should be trimmed right after they bloom to avoid removing next year's flower buds. Oak trees should not be trimmed in spring when oak wilt fungus is most active.
+Avoid heavy pruning on weak trees in early spring, wait until they show strong new growth. Some ornamental flowering trees should be trimmed right after they bloom to avoid removing next year's flower buds. Oak trees should not be trimmed in spring when oak wilt fungus is most active.
 
 ## Summer Trimming (June-August)
 
 Summer trimming in Birmingham requires careful consideration. While the warm temperatures seem ideal, the intense heat and increased water demands make trees vulnerable to stress from pruning.
 
 **Light Summer Trimming Only:**
-Summer is ideal for light pruning only—removing dead wood, crossing branches, and small limbs that are clearly damaged or diseased. Heavy pruning during Birmingham's hot summers can severely stress trees and open them to pest and disease invasion.
+Summer is ideal for light pruning only, removing dead wood, crossing branches, and small limbs that are clearly damaged or diseased. Heavy pruning during Birmingham's hot summers can severely stress trees and open them to pest and disease invasion.
 
 **Benefits of Summer Trimming:**
 You can clearly see disease and insect damage during the growing season. Diseased or infested branches are easier to identify when leaves are fully developed. This visibility helps you make informed trimming decisions about which branches truly need removal.
 
 **What NOT to Do in Summer:**
-Avoid major crown reduction or reshaping in summer. Don't trim more than 10-15% of the canopy. Never top trees or perform severe pruning. Refrain from fertilizing after trimming—trees need water reserves, not nutrient stimulation, during heat stress.
+Avoid major crown reduction or reshaping in summer. Don't trim more than 10-15% of the canopy. Never top trees or perform severe pruning. Refrain from fertilizing after trimming, trees need water reserves, not nutrient stimulation, during heat stress.
 
 ## Fall Trimming (September-November)
 
@@ -67,7 +67,7 @@ Trees are dormant and have minimal stress response to pruning. Compartmentalizat
 This is when to perform structural pruning, crown thinning, and major shaping work. Winter is ideal for removing crossing branches, creating good branch angles, and establishing proper crown structure. Dead wood removal is most efficient in winter when living wood is clearly distinguished.
 
 **Winter Considerations:**
-Avoid trimming frozen branches—they're brittle and prone to tearing. Wait for temperatures above 20°F. If a hard freeze is predicted within 48 hours of trimming, wait. Don't apply pruning wound dressing or paint—trees compartmentalize better without it.
+Avoid trimming frozen branches, they're brittle and prone to tearing. Wait for temperatures above 20°F. If a hard freeze is predicted within 48 hours of trimming, wait. Don't apply pruning wound dressing or paint, trees compartmentalize better without it.
 
 ## Tree-Specific Seasonal Trimming Guide
 
@@ -91,7 +91,7 @@ When hiring professionals, consider asking specifically about seasonal timing fo
 
 ## Emergency Trimming
 
-Sometimes trees need immediate trimming regardless of season—storm damage, safety hazards, or disease requires urgent action. Emergency pruning can happen any time. Focus on removing the damaged branch cleanly rather than waiting for ideal season.
+Sometimes trees need immediate trimming regardless of season, storm damage, safety hazards, or disease requires urgent action. Emergency pruning can happen any time. Focus on removing the damaged branch cleanly rather than waiting for ideal season.
 
 ## Conclusion: Plan Your Trimming Calendar
 
